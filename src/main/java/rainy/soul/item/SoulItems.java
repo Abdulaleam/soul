@@ -10,7 +10,7 @@ import rainy.soul.Soul;
 
 public class SoulItems {
 
-    public static final Item SOUL_LANTERN = registerItem("soul_lantern", new Item(new Item.Settings()));
+    public static final Item SCYTHE = registerItem("scythe", new Item(new Item.Settings()));
 
 
 
