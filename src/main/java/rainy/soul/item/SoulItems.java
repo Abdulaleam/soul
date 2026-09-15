@@ -6,13 +6,14 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import rainy.soul.Abilities.ScytheAbility;
 import rainy.soul.Soul;
 
 public class SoulItems {
 
-    public static final Item SCYTHE = registerItem("scythe", new Item(new Item.Settings()));
+    public static final Item SCYTHE = registerItem("scythe", new ScytheAbility(new Item.Settings()));
 
-    public static final Item CORRUPTED_SOUL = registerItem("corruped_soul", new Item(new Item.Settings()));
+    public static final Item CORRUPTED_SOUL = registerItem("corrupted_soul", new Item(new Item.Settings()));
     public static final Item REFINED_SOUL = registerItem("refined_soul", new Item(new Item.Settings()));
 
 
@@ -33,8 +34,6 @@ public class SoulItems {
             entries.add(SoulItems.SCYTHE);
             entries.add(SoulItems.CORRUPTED_SOUL);
             entries.add(SoulItems.REFINED_SOUL);
-
-
         });
     }
 }
