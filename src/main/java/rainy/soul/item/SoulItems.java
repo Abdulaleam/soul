@@ -12,6 +12,9 @@ public class SoulItems {
 
     public static final Item SCYTHE = registerItem("scythe", new Item(new Item.Settings()));
 
+    public static final Item CORRUPTED_SOUL = registerItem("corruped_soul", new Item(new Item.Settings()));
+    public static final Item REFINED_SOUL = registerItem("refined_soul", new Item(new Item.Settings()));
+
 
 
     private static Item registerItem(String name, Item item) {
@@ -26,7 +29,11 @@ public class SoulItems {
     public static void SoulItems() {
         Soul.LOGGER.info("Registering SoulItemsSoulItems for " + Soul.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(SoulItems.SCYTHE);
+            entries.add(SoulItems.CORRUPTED_SOUL);
+            entries.add(SoulItems.REFINED_SOUL);
+
 
         });
     }
