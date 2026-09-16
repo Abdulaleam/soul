@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import rainy.soul.Soul;
+import rainy.soul.SoulBlock.SoulBlocks;
 
 public class SoulGroup {
 
@@ -20,6 +21,7 @@ public class SoulGroup {
                         entries.add(SoulItems.REFINED_SOUL);
                         entries.add(SoulItems.CORRUPTED_SOUL);
                         entries.add(SoulItems.SOUL_LANTERN);
+                        entries.add(SoulBlocks.PURIFIER);
                     }).build());
 
     public static void registerSoulGroups() {

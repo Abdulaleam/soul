@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 import rainy.soul.Abilities.ScytheAbility;
 import rainy.soul.Abilities.TheGuide;
 import rainy.soul.Soul;
+import rainy.soul.SoulBlock.SoulBlocks;
 
 public class SoulItems {
 
@@ -47,6 +48,7 @@ public class SoulItems {
             entries.add(SoulItems.CORRUPTED_SOUL);
             entries.add(SoulItems.REFINED_SOUL);
             entries.add(SoulItems.SOUL_LANTERN);
+            entries.add(SoulBlocks.PURIFIER);
         });
     }
 }

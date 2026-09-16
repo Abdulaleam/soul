@@ -3,6 +3,7 @@ package rainy.soul.Abilities;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.MovementType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -39,9 +40,9 @@ public class TheGuide extends Item {
                     continue;
 
                 Vec3d direction = player.getPos().subtract(soul.getPos()).normalize();
-                Vec3d newPos = soul.getPos().add(direction.multiply(0.2));
+                Vec3d pull = direction.multiply(0.2);
 
-                soul.setPosition(newPos.x, newPos.y, newPos.z);
+                soul.move(MovementType.SELF, pull);
             }
         }
     }
