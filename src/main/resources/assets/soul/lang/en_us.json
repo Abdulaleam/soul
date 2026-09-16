@@ -1,6 +1,8 @@
 {
   "item.soul.scythe": " A Reaper 's Scythe ",
   "item.soul.corrupted_soul": " Corrupted Soul ",
-  "item.soul.refined_soul" : " Refined Soul"
+  "item.soul.refined_soul" : " Refined Soul",
+  "item.soul.soul_lantern": " Soul Lantern ",
+  "itemgroup.soul.soul_items": " Soul Items "
 
 }

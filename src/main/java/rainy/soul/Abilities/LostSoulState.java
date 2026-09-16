@@ -21,4 +21,7 @@ public class LostSoulState {
     public static void unmark(Entity entity) {
         LOSTSOULS.remove(entity.getUuid());
     }
+    public static Set<UUID> getAllSouls() {
+        return LOSTSOULS;
+    }
 }
