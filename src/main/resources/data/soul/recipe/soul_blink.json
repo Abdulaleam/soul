@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "Z",
+    "X",
+    "Y"
+  ],
+  "key": {
+    "X": {
+      "item": "soul:refined_soul"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    },
+    "Z": {
+      "item": "minecraft:ender_pearl"
+    }
+    },
+  "result": {
+    "id": "soul:soul_blink",
+    "count": 1
+  }
+}

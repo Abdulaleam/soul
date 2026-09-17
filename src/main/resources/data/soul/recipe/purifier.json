@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XYX",
+    "YZY",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "Y": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "Z": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "id": "soul:purifier",
+    "count": 1
+  }
+}

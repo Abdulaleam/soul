@@ -23,6 +23,9 @@ public class SoulGroup {
                         entries.add(SoulItems.SOUL_LANTERN);
                         entries.add(SoulBlocks.PURIFIER);
                         entries.add(SoulBlocks.REFINER);
+                        entries.add(SoulItems.SOUL_SWORD);
+                        entries.add(SoulItems.SOUL_BLINKER);
+
                     }).build());
 
     public static void registerSoulGroups() {

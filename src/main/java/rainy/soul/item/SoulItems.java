@@ -6,12 +6,13 @@ import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import rainy.soul.Abilities.Blink;
 import rainy.soul.Abilities.ScytheAbility;
+import rainy.soul.Abilities.SoulSword;
 import rainy.soul.Abilities.TheGuide;
 import rainy.soul.Soul;
 import rainy.soul.SoulBlock.SoulBlocks;
@@ -27,8 +28,11 @@ public class SoulItems {
     public static final Item CORRUPTED_SOUL = registerItem("corrupted_soul", new Item(new Item.Settings()));
     public static final Item REFINED_SOUL = registerItem("refined_soul", new Item(new Item.Settings()));
 
-    public static final Item SOUL_LANTERN = registerItem("soul_lantern", new TheGuide(new Item.Settings()));
+    public static final Item SOUL_LANTERN = registerItem("soul_lantern", new TheGuide(new Item.Settings().maxCount(1)));
 
+    public static final Item SOUL_SWORD = registerItem("soul_sword", new SoulSword(ToolMaterials.NETHERITE, new Item.Settings().maxCount(1)));
+
+    public static final Item SOUL_BLINKER = registerItem("soul_blink", new Blink(new Item.Settings().maxCount(1)));
 
 
     private static Item registerItem(String name, Item item) {
