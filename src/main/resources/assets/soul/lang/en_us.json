@@ -5,6 +5,7 @@
   "item.soul.soul_lantern": " Soul Lantern ",
   "itemgroup.soul.soul_items": " Soul Items ",
 
-  "block.soul.purifier": " The Harvester "
+  "block.soul.purifier": " The Harvester ",
+  "block.soul.refiner": "The Luminary Loom"
 
 }

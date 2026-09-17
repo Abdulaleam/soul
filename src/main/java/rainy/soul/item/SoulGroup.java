@@ -22,6 +22,7 @@ public class SoulGroup {
                         entries.add(SoulItems.CORRUPTED_SOUL);
                         entries.add(SoulItems.SOUL_LANTERN);
                         entries.add(SoulBlocks.PURIFIER);
+                        entries.add(SoulBlocks.REFINER);
                     }).build());
 
     public static void registerSoulGroups() {

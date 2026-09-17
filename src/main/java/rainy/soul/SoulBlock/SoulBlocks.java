@@ -15,6 +15,9 @@ public class SoulBlocks {
     public static final Block PURIFIER = registerBlock("purifier",
             new HarvesterBlock(AbstractBlock.Settings.create()));
 
+    public static final Block REFINER = registerBlock("refiner",
+            new RefinerBlock(AbstractBlock.Settings.create()));
+
     private static Block registerBlock(String name , Block block) {
         RegisterBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Soul.MOD_ID, name), block);

@@ -8,8 +8,10 @@ import rainy.soul.Abilities.HarvesterBlock;
 import rainy.soul.Abilities.ScytheAbility;
 import rainy.soul.Abilities.TheGuide;
 import rainy.soul.SoulBlock.SoulBlocks;
+import rainy.soul.entity.SoulBlockEntities;
 import rainy.soul.item.SoulGroup;
 import rainy.soul.item.SoulItems;
+import rainy.soul.screen.ModScreenHandlers;
 
 public class Soul implements ModInitializer {
 	public static final String MOD_ID = "soul";
@@ -23,6 +25,8 @@ public class Soul implements ModInitializer {
 		SoulGroup.registerSoulGroups();
 		SoulBlocks.registerSoulBlocks();
 		HarvesterBlock.Tracker.registerTick();
+		SoulBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 
 
 	}
