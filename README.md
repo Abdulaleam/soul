@@ -1,5 +1,7 @@
 # Rainy 's Souls Mod
 
+YOUTUBE GUIDE : https://youtu.be/LG2oJnLZIio
+
 ## About
 
 This Mod Was Made so you can try new stuff related to Souls
